@@ -1,0 +1,16 @@
+//Factorial of a number with Recursion
+#include<iostream>
+using namespace std;
+int fac(int n){
+    if(n<=1){
+        return 1;
+    }
+    return n*fac(n-1);
+}
+int main(){
+    int n;
+    cout<<"Enter the value for which you want factorial ";
+    cin>>n;
+    cout<<"The factorial of the number "<<n<<" is "<<fac(n);
+return 0;
+}
