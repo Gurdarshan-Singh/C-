@@ -2,7 +2,7 @@
 using namespace std;
 class emp{
     int id;
-    static int count; //obj uses one count var
+    static int count; //obj uses one count var and default value is 0
     public:
     void setdata(){
         cout<<"Enter the id ";
