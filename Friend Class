@@ -4,11 +4,14 @@ class complex;
 class calculator{
     public:
     int sum(complex,complex);
+    int sumc(complex,complex);
+
  };
  class complex{
     int a;
     int b;
     //friend int calculator:: sum(complex v1,complex v2); //we can also use this
+    //friend int calculator:: sumc(complex v1,complex v2); //we can also use this
     friend class calculator;
     public:
     void setdata(int v1,int v2){
@@ -24,6 +27,9 @@ class calculator{
 int calculator::sum(complex v1,complex v2){
     return (v1.a+v2.a);
 }
+int calculator::sumc(complex v1,complex v2){
+    return (v1.b+v2.b);
+}
 int main(){
     complex v1,v2;
     v1.setdata(1,2);
@@ -33,5 +39,7 @@ int main(){
     calculator cal;
     int res=cal.sum(v1,v2);
     cout<<"\nThe sum of real part is "<<res;
+    int resc=cal.sumc(v1,v2);
+    cout<<"\nThe sum of imaginary part is "<<resc;
 return 0;
 }
