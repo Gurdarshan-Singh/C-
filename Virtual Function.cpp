@@ -22,7 +22,7 @@ int main(){
     base objb;
     derived objd;
     bptr=&objd;
-    bptr->display();
+    bptr->display(); //now display function of derived will be called
     
 return 0;
 }
