@@ -30,7 +30,7 @@ class text:public Gur{
     text(string s,float r,int w):Gur(s,r){
         wd=w;
     }
-    void display(){
+    void display(){                                                              //if no display function in derived class then the display fn of base class is invoked
         cout<<"The Title of the video is "<<title<<endl;        
         cout<<"The Rating of the video is "<<rating<<" Out of 5"<<endl;        
         cout<<"The Length of the video is "<<wd<<" words"<<endl;        
